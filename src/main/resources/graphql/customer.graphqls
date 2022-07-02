@@ -1,0 +1,10 @@
+type Customer {
+    customerId: ID!
+    name: String!
+    orders: [Order]
+}
+
+input CustomerInput {
+    customerId: ID
+    name: String!
+}

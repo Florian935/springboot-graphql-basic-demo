@@ -5,27 +5,6 @@ type Query {
 
 type Mutation {
     addCustomer(name: String): Customer
+    addCustomerInput(customerInput: CustomerInput!): Customer
     deleteCustomerById(customerId: Int): Boolean
-}
-
-type Customer {
-    customerId: ID!
-    name: String!
-    orders: [Order]
-}
-
-input CustomerInput {
-    customerId: ID
-    name: String!
-}
-
-type Order {
-    orderId: ID!
-    customerId: Int
-    products: [Product]
-}
-
-type Product {
-    productId: ID!
-    orderId: Int
 }
