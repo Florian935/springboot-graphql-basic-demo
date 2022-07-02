@@ -1,0 +1,5 @@
+type Car {
+    carId: ID!
+    model: String
+    clientId: Int
+}

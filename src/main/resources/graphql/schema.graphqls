@@ -1,6 +1,8 @@
 type Query {
     customers: [Customer]
     customerById(customerId: ID): Customer
+
+    clients: [Client]
 }
 
 type Mutation {

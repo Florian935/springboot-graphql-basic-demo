@@ -1,0 +1,5 @@
+type Pet {
+    petId: ID!
+    name: String
+    clientId: Int
+}

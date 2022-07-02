@@ -1,0 +1,6 @@
+type Client {
+    clientId: ID!
+    userName: String
+    pet: Pet
+    cars: [Car]
+}
